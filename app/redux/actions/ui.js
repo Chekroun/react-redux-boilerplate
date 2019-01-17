@@ -3,7 +3,6 @@ import * as actions from '../constants';
 export function updateText(didUpdate) {
   return {
     type: actions.UPDATE_TEXT,
-    didUpdate,
   };
 }
 

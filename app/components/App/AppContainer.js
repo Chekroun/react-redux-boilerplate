@@ -5,7 +5,8 @@ import App from './App';
 
 class AppContainer extends Component {
   onButtonClick = () => {
-    this.props.updateText(true);
+
+    this.props.updateText();
   }
   render() {
     return (
@@ -15,6 +16,7 @@ class AppContainer extends Component {
           onIncrement={this.props.incrementCounter}
           onDecrement={this.props.decrementCounter}
           counter={this.props.ui.counter}
+          didUpdate={this.props.ui.didUpdate}
         />
       </div>
     );
